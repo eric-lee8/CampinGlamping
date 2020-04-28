@@ -26,6 +26,52 @@
       width: 100%;
       height: 100%;
   }
+  div.gallery {
+  border: 1px solid #ccc;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.responsive {
+  padding: 0 6px;
+  float: left;
+  width: 24.99999%;
+}
+
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+  }
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
   </style>
 </head>
 <body>
@@ -47,10 +93,7 @@
               </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link text-muted" href="#">Cabins & Tents</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link text-muted" href="#">Activities</a>
+          <a class="nav-link text-muted" href="#">Gallery</a>
         </li>
         <li class="nav-item">
           <a class="nav-link text-muted" href="Contact.html">Contact</a>
@@ -112,8 +155,8 @@
 <div>
   <div class="row">
     <div class="col-3"></div>
-    <div class="col-sm-6 bg-white" style="opacity: 0.9;padding: 1rem;">
-      <div style="background-color: #D9C0DA;padding: 2rem;">
+    <div class="col-sm-6 bg-white" style="opacity: 0.9; padding: 1rem;">
+      <div style="background-color: #D9C0DA;padding: 2rem; opacity: 1.0;">
         <h1 style="text-align: center;padding: 1rem;">WELCOME TO CAMPINGLAMPING</h1>
         <br>
         <p>Some text..</p>
@@ -141,6 +184,102 @@
     </div>
     <div class="col-3"></div>
   </div>
+</div>
+
+<div class="Map row">
+  <div class="col-sm-3"></div>
+  <div class="col-sm-6 bg-secondary">
+    <div style="padding: 1.5rem;">
+      <p><iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1774.6440099530128!2d75.981769!3d27.178683!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xafdce1cefad18c83!2sCampinglamping!5e0!3m2!1sen!2sca!4v1587974679926!5m2!1sen!2sca" id="myIframe" width=100% height="600rem" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe></p>
+  </div>
+  </div>
+  <div class="col-sm-3"></div>
+</div>
+
+<div class="Contact row" >
+  <div class="col-sm-3"></div>
+  <div class="col-sm-6" style="background-color: white;">
+    <div class="row">
+      <div class="col-sm-6">
+        <div>
+          <div class="card-body" style="padding: 2rem;">
+            <h4 class="card-title">Contact for Bookings</h4>
+            <br>
+            <p class="card-text">Call/Whatsapp:</p> 
+            <p>+91 088603 70002</p>
+            <br>
+            <h4>Address</h4>
+            <br>
+            <p class="card-text">Plot 301, The Nature Farms,</p>
+            <p>Delhi -Jaipur Highway NH 48</p>
+            <p>Opp. Amity University
+              Achrol,</p>
+            <p> Jaipur, Rajasthan 303002
+              India</p>
+            <br>
+            
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6" style="padding: 1rem;">
+        <br>
+        <h4>Opening Hours</h4>
+        <br>
+        <p>Mon:	Open 24 hours</p>
+        <p>Tue:	Open 24 hours</p>
+        <p>Wed:	Open 24 hours</p>
+        <p>Thu:	Open 24 hours</p>
+        <p>Fri:	Open 24 hours</p>
+        <p>Sat:	Open 24 hours</p>
+        <p>Sun:	Open 24 hours</p></div>
+    </div>  
+  </div>
+  <div class="col-sm-3"></div>
+</div>
+
+<div class="row">
+  <div class="col-3"></div>
+  <div class="col-sm-6" style="background-color: white; padding: 1rem;">
+    <h2 style="padding: 1rem;">Gallery</h2>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="img_5terre.jpg">
+      <img src="img_5terre.jpg" alt="Cinque Terre" width="600" height="400">
+    </a>
+    <div class="desc">Add a description of the image here</div>
+  </div>
+</div>
+
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="img_forest.jpg">
+      <img src="img_forest.jpg" alt="Forest" width="600" height="400">
+    </a>
+    <div class="desc">Add a description of the image here</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="img_lights.jpg">
+      <img src="img_lights.jpg" alt="Northern Lights" width="600" height="400">
+    </a>
+    <div class="desc">Add a description of the image here</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="img_mountains.jpg">
+      <img src="img_mountains.jpg" alt="Mountains" width="600" height="400">
+    </a>
+    <div class="desc">Add a description of the image here</div>
+  </div>
+</div>
+  </div>
+  <div class="col-3"></div>
 </div>
 
 
